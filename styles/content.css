@@ -1,0 +1,17 @@
+#content_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#content_list li{
+    color:white;
+    list-style: none;
+    background: rgba(154, 146, 232, .2);
+    margin-left: 1em;
+    margin-top: 3em;
+    padding: 1em;
+    border-radius: 2em;
+
+}

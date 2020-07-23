@@ -1,0 +1,55 @@
+
+form{
+    width: 60%;
+    margin: auto;
+}
+.form-input{
+    display: flex;
+    flex-flow: column;
+    background: rgb(63, 46, 193);
+    border-radius: 10%;
+    margin-bottom: 2em;
+}
+
+
+.form-input input{
+    margin: 1em;
+}
+
+.form p{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    margin-top: .5em;
+}
+
+.form-input button{
+    align-self: center;
+    margin-bottom: 0.5em;
+    background-color: rgb(171, 167, 211);
+    border-radius: 10%;
+    width: 40%;
+    height: 1.8em;
+    outline: none;
+    margin-top: auto;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+@media (min-width: 650px){
+    form{
+        width: 30%;
+    }
+}
+
+@media (min-width: 900px){
+    form{
+        width: 20%;
+        height: 15em;
+        margin-top: 3em;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign up</title>
+        <link rel="stylesheet" type="text/css" href="/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="/styles/form.css">
+        <link rel="stylesheet" type="text/css" href="/styles/common/header.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Where have I stopped?</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form class="form" action="index.html" method="post">
+            <div class="form-input">
+                <p>Cadastro</p>
+                <label for="username"></label>
+                <input id="name" type="text" name="username" placeholder="Digite seu nome..."/>
+                <label for="email"></label>
+                <input id="email" type="text" name="email" placeholder="Digite seu email..."/>
+                <label for="password"></label>
+                <input id="password" type="password" name="password" placeholder= "senha"/>
+                <button type="input" name="button">Criar conta</button>
+                <button type="input" id="login" name="button">Já possui uma conta</button>
+            </div>
+        </form>
+        <footer>footer</footer>
+
+        <script type="module" src="./js/auth/signup.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Where have I Stopped?</title>
+        <link rel="stylesheet" type="text/css" href="/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="/styles/form.css">
+        <link rel="stylesheet" type="text/css" href="/styles/contentForm.css">
+        <link rel="stylesheet" type="text/css" href="/styles/common/header.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Where have I stopped?</h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li id="add"><a href="/addConteudo.html">Adicionar</a></li>
+                    <li id="logout"><a href="/index.html">Deslogar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form class="form" action="#" method="post">
+            <div class="form-input">
+                <p>Adicionar</p>
+                <label for="platform"></label>
+                <input id="platform" type="text" name="platform" placeholder="De onde é esse conteudo?"/>
+                <label for="title"></label>
+                <input required id="title" type="text" name="title" placeholder="Digite o título"/>
+                <select required class="content_platform" name="">
+                    <option disabled selected>Selecione tipo de conteúdo</option>
+                    <option value="video">vídeo</option>
+                    <option value="book">livro</option>
+
+                </select>
+                <label for="page"></label>
+                <input class="hidden hideable" id="book" type="text" name="page" placeholder="Digite a página do conteúdo"/>
+                <label for="episode"></label>
+                <input class="hidden hideable" id="video" type="text" name="episode" placeholder="Digite o episódio"/>
+                <label for="finished"></label>
+                <input id="finished" type="checkbox" name="finished">
+                <span id="check_message">Marque se já finalizou esta parte</span>
+                <button type="input" name="button">Adicionar</button>
+            </div>
+        </form>
+
+        <footer>footer</footer>
+
+        <script type="module" src="./js/addConteudo.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    font-family: sans-serif,arial;
+    margin:0;
+    padding:0;
+}
+
+
+main{
+    text-align: center;
+    color: white;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+}

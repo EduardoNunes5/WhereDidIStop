@@ -1,0 +1,21 @@
+#finished{
+    margin-top: 0;
+}
+#check_message{
+    align-self: center;
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: rgb(239, 172, 172);
+}
+
+.content_platform{
+    align-self: center;
+    width: 30%;
+    margin-bottom: .5em;
+}
+
+
+.hidden{
+    display: none;
+}
