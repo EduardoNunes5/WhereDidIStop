@@ -20,4 +20,15 @@ const get = async(token, endpoint)=>{
 
 }
 
-export { post, get };
+const del = async(token, endpoint)=>{
+    return await fetch(`https://wherehaveistopped.herokuapp.com/api/contents${endpoint}`,{
+        method: 'DELETE',
+        headers:{
+            'Content-Type': 'application/json',
+            'authorization': token
+        }
+    });
+
+}
+
+export { post, get, del };

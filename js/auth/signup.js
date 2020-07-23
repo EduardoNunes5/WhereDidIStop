@@ -13,7 +13,7 @@ $form.addEventListener('submit', async(e)=>{
     const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
-    const result = await post({name, email, password},null, 'signup');
+    const result = await post({name, email, password},null, '/signup');
     if(result.status === 201){
         window.location.href="./login.html"
     }

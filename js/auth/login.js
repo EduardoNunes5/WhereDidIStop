@@ -3,7 +3,6 @@ import { post}  from '../req/requests.js';
 const $form = document.querySelector('.form');
 const $signUp = document.querySelector('#signup');
 
-console.log($signUp);
 $signUp.addEventListener('click', (e)=> {
     e.preventDefault();
     window.location.href = './signup.html';
