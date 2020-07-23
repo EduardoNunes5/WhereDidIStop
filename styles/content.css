@@ -11,7 +11,13 @@
     background: rgba(154, 146, 232, .2);
     padding: 1em;
     border-radius: 1em;
-    margin-left: 1em;
     margin-top: 1em;
 
+}
+
+
+@media (min-width: 420px){
+    #content_list li{
+        margin-left: 1em;
+    }
 }

@@ -28,18 +28,24 @@ export function buttonHandler(token){
     actionBtns.forEach( btn =>{
         btn.addEventListener('click', (e) =>{
             const parentId = btn.parentNode.parentNode.getAttribute('id');
-            delRequest(e, token, parentId);
+            if(btn.id === 'delete')
+                delRequest(e, token, parentId);
+            else{
+                edit();
+            }
         })
     })
 }
 
-
+function edit(){
+    window.location.href = "./editConteudo.html";
+}
 
 async function delRequest(e, token, elementId){
     console.log('id:: ',elementId)
     const result = await del(token, `/${elementId}`);
     console.log(result);
     if(result.status === 200)
-        window.location.href = './index';
+        window.location.href = './index.html';
 }
 export default lista;
