@@ -6,7 +6,7 @@ const $add = document.querySelector('#add');
 const $logout = document.querySelector('#logout');
 const token = sessionStorage.getItem('token');
 if(!token){
-    window.location.href = '/login.html';
+    window.location.href = 'WhereDidIStop/login.html';
 }
 else{
     $add.hidden = false;
