@@ -1,6 +1,6 @@
 
 const post = async(payload, token, endpoint)=>{
-    return await fetch(`http://wherehaveistopped.herokuapp.com/api${endpoint}`,{
+    return await fetch(`https://wherehaveistopped.herokuapp.com/api${endpoint}`,{
         method: 'POST',
         headers:{
             'Content-Type': 'application/json',
@@ -11,7 +11,7 @@ const post = async(payload, token, endpoint)=>{
 }
 
 const get = async(token, endpoint)=>{
-    return await fetch(`http://wherehaveistopped.herokuapp.com/api${endpoint}`,{
+    return await fetch(`https://wherehaveistopped.herokuapp.com/api${endpoint}`,{
         headers:{
             'Content-Type': 'application/json',
             'authorization': token
