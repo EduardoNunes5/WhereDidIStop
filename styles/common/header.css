@@ -28,6 +28,12 @@ nav ul{
     margin-right: .3em;
 }
 
+nav ul li{
+    background: rgba(115, 9, 150, .3);
+    border-radius: .3em;
+    padding: .2em;
+    margin-bottom: .5em;
+}
 
 nav ul li a:visited{
     color: white;
@@ -37,6 +43,7 @@ nav ul li a:visited{
 a{
     text-decoration: none;
     color:white;
+    padding: .2em;
 }
 
 nav ul li a:active{
@@ -58,15 +65,26 @@ nav ul li a:active{
 
 @media (min-width: 720px){
     header{
-        justify-content:center;
-        flex-flow: column;
+        display: flex;
+        flex-direction: column;
+
     }
     header h1{
         width: 100%;
+        margin: auto;
     }
 
     header nav{
         align-self: center;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
+     nav ul li{
+        margin-bottom: 0;
+        margin-left: .3em;
     }
 
 }
