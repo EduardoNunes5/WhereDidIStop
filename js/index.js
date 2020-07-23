@@ -42,5 +42,5 @@ function addContent(e){
 
 function logout(e){
     sessionStorage.removeItem('token');
-    location.reload();
+    window.location.href = './index';
 }
