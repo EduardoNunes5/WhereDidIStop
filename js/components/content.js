@@ -21,20 +21,25 @@ const lista = (contents)=>{
 }
 
 export function buttonHandler(token){
-    const elements = document.querySelectorAll('#content_list li');
+    const listElements = document.querySelectorAll('#content_list li');
     const actionBtns = document.querySelectorAll('.btn_action');
-    elements.forEach(element =>{
-        actionBtns.forEach( btn =>{
-            btn.addEventListener('click', (e) => btnEvent(e,token , element.getAttribute('id')));
+
+
+    actionBtns.forEach( btn =>{
+        btn.addEventListener('click', (e) =>{
+            const parentId = btn.parentNode.parentNode.getAttribute('id');
+            delRequest(e, token, parentId);
         })
     })
 }
 
 
-async function btnEvent(e, token, elementId){
-    console.log('id:: ', elementId)
+
+async function delRequest(e, token, elementId){
+    console.log('id:: ',elementId)
     const result = await del(token, `/${elementId}`);
+    console.log(result);
     if(result.status === 200)
-        window.location.reload();
+        window.location.href = './index';
 }
 export default lista;
